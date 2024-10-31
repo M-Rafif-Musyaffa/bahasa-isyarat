@@ -191,7 +191,7 @@ if page == "ASL Game & Simulation":
                 # Tampilkan hasil pada Streamlit
                 frame_placeholder.image(rgb_frame)
 
-            if not is_ localhost and not uploaded_file.type.startswith('video'):
+            if not is_local and not uploaded_file.type.startswith('video'):
                 # Jika menggunakan gambar statis, hentikan loop setelah satu iterasi
                 break
 
