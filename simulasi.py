@@ -172,7 +172,6 @@ if page == "ASL Game & Simulation":
                 break
 
     cap.release()
-    cv2.destroyAllWindows()
 
 
 # Halaman Kedua: Tentang ASL
