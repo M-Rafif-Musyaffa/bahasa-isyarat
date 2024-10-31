@@ -116,9 +116,6 @@ if page == "ASL Game & Simulation":
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             frame_placeholder.image(rgb_frame)
 
-            if cv2.waitKey(1) & 0xFF == ord("q"):
-                break
-
     # Mode Simulasi Deteksi
     elif mode == "ASL Simulation":
         st.subheader("ASL Detection Simulation")
@@ -167,9 +164,6 @@ if page == "ASL Game & Simulation":
             # Tampilkan hasil kamera pada Streamlit
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             frame_placeholder.image(rgb_frame)
-
-            if cv2.waitKey(1) & 0xFF == ord("q"):
-                break
 
     cap.release()
 
